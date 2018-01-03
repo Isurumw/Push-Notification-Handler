@@ -1,0 +1,34 @@
+{
+    "application": {
+        "VERSION": "v1",
+        "APP_NAME": "Test",
+        "PORT": "3000"
+    },
+    "database": {
+        "HOST": "0.0.0.0",
+        "USERNAME": "",
+        "PASSWORD": "",
+        "PORT": "27017",
+        "NAME": "kripter_03/01/2018"
+    },
+    "redis": {
+        "HOST": "127.0.0.1",
+        "PORT": "6379"
+    },
+    "notification": {
+        "TYPE": ["voip", "text"],
+        "DEVICETYPE": ["ios", "android"],
+        "MESSAGE": "You have a new message",
+        "MESSAGEFROM": "You have a new message from ",
+        "TITLE": "Kripter messenger",
+        "SOUND": "ping.aiff",
+        "ENVIRONMENT": ["development", "production"],
+        "CATEGORYID": ["text", "audio", "video"]
+    },
+    "secret": {
+        "KEY": "donations_secretkeyfortokengenerator",
+        "REFRESHKEY": "donations_secretkeyforrefreshtokengenerator",
+        "EXPIRE_TIME": "120m"
+    },
+    "baseurl": "http://localhost:3000/api/v1/"
+}
